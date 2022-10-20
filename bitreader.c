@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
   }
 
   // Open file indicated by first command line argument.
-  FILE *f = fopen(argv[1], "rb");
+  FILE *f = fopen(argv[1], "r");
   // Check if file opened.
   if (f == NULL) {
     // Print error.
@@ -53,7 +53,6 @@ int main(int argc, char *argv[]) {
 
   // Complete the line.
   printf("\n");
-
 
   // Exit without error.
   return 0;
